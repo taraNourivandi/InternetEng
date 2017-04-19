@@ -1,63 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="description" content="arillo is responsive html real estate theme">
-    <meta name="author" content="afriq yasin ramadhan">
-    <link rel="shortcut icon" href="img/favicon.png">
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <!--<base href="enter base url here">-->
+    <title>سجا - سیستم جامع آموزش</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32">
+    <meta name="description" content="سجا - سیستم جامع آموزش">
+    <meta name="keywords" content="سجا,آموزش,جامع,سیستم">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize_rtl.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/admin_styles.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/material-icons.css">
+</head>
+<body>
+<!--main hedader-->
+<header>
+	<!--top-header-->
+	<nav class="top-header">
+		<div class="container">
+			<div class="nav-wrapper ">
+				<a href="#" class="brand-logo right">
+					<h1 class="hide">سجاد سیستم جامع آموزش</h1>
+					<img class="responsive-img" src="assets/img/saja_logo.png" alt="سجا">
+				</a>
+				<a class="page-title right hide-on-med-and-down">سیستم جامع آموزش</a>
+				<!--nav-mobile menu button-->
+				<a href="#" id="nav-mobile-button" data-activates="nav-mobile"
+				   class="button-collapse  hide-on-large-only left"><i class="material-icons">menu</i>
+				</a>
+				<!--//nav-mobile menu button-->
+			</div>
+		</div>
+	</nav>
+	<!--//top-header-->
 
-    <title>تغییر مشخصات استاد</title>
+	<!--sidebar-->
+	<ul id="nav-mobile" class="side-nav right fixed">
+		<li class="user-profile valign-wrapper">
+			<!--<img src="assets/img/photo_2017-03-27_09-55-25.jpg" alt="عکس کاربر" class="circle responsive-img">-->
+			<i class="material-icons medium">face</i>
+			<p>علی علوی</p>
+			<!--user-profile-modal trigger-->
+			<a href=main.html>
+                <i class="material-icons tooltipped" data-position="bottom" data-delay="50"
+                   data-tooltip="خروج از سیستم">power_settings_new</i>
+            </a>
+		</li>
+		<li class="right-align">
+			<ul class="collapsible collapsible-accordion">
+				<li class="bold">
+					<a href="std-grades.html" class="collapsible-header waves-effect waves-teal">مشاهده نمرات</a>
+				</li>
+				<li class="bold">
+					<a href="std-reg.html" class="collapsible-header waves-effect waves-teal">انتخاب واحد</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<!--//sidebar-->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootstrap-rtl.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="css/style-rtl.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-	<link href="css/responsive-rtl.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-   <center>
+</header>
+<!--//main header-->
+<main>
+	<!--main-content-->
+	  
     <div class="container col-md-offset-2">
     <div class="row">
       <div class="col-md-9">
        <div class="jumbotron">
-        <h3>تغییر مشخصات</h3>
+        <h4>تغییر مشخصات</h4>
         
         <form class="form-horizontal" role="form">
     
           <div class="form-group">
-            <label class="col-lg-3 control-label">ایمیل:</label>
+            <label class="col-lg-3 control-label"><h6>ایمیل:</h6></label>
             <div class="col-lg-8">
               <input class="form-control" type="text" >
             </div>
           </div>
+        
           <div class="form-group">
-            <label class="col-md-3 control-label">شناسه ورود:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" >
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-3 control-label">گذرواژه:</label>
+            <label class="col-md-3 control-label"><h6>گذرواژه:</h6></label>
             <div class="col-md-8">
               <input class="form-control" type="password" value="11111122333">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">تکرار گذزواژه:</label>
+            <label class="col-md-3 control-label"><h6>تکرار گذرواژه:</h6></label>
             <div class="col-md-8">
               <input class="form-control" type="password" value="11111122333">
             </div>
@@ -65,9 +95,9 @@
           <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
-              <div class="col-md-5 col-sm-5"><input type="submit" name="submit" value="اعمال تغییرات" class="btn btn-warning btn-lg btn-block"></div>
-              <span></span>
-              <div class="col-md-5 col-sm-5"><input type="reset" value="انصراف" class="btn btn-lg btn-block"></div>
+            <a href="std-home.html" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">done_all</i></a>
+              <a href="std-home.html" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">not_interested</i></a>
+              
               
             </div>
           </div>
@@ -77,5 +107,39 @@
   </div>
 </div>
 <hr>
-</center>
-  </body>
+
+	<!--//main-content-->
+
+	<!--user-profile-modal structure-->
+	<div id="user-profile-modal" class="modal">
+		<div class="modal-content">
+			<h4>ویرایش تنظیمات کاربر</h4>
+			<p>تنظیمات کاربر را ویرایش کنید</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="modal-action waves-effect waves-green btn-flat"><i class="material-icons right">done</i>ثبت تغییرات</a>
+			<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right">close</i>انصراف</a>
+		</div>
+	</div>
+	<!--//user-profile-modal structure-->
+
+</main>
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© ۱۳۹۶ تمامی حقوق نزد گروه سجا محفوظ است
+			<!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/init.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/URI.min.js"></script>-->
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
