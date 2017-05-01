@@ -26,12 +26,14 @@
 <body>
 <!--main hedader-->
 <header>
+    <!-- change -- >
     <!--top-header-->    
         <%@ include file="top-header.html" %>    
     <!--//top-header-->
     <!--sidebar-->
         <%@ include file="sidebar.jsp" %>
     <!--//sidebar-->
+    <!--//change -- >
 
 </header>
 <!--//main header-->
